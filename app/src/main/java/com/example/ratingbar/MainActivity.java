@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
         addEvents();
     }
     private void addEvents() {
-        txtValueRate.setText(String.valueOf(ratingBar.getRating()));
+        txtValueRate.setText(String.valueOf(ratingBar.getRating())+"/5");
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                txtValueRate.setText(String.valueOf(ratingBar.getRating()));
+                txtValueRate.setText(String.valueOf(ratingBar.getRating())+"/5");
 
             }
         });
