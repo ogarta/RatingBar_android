@@ -7,10 +7,25 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center">
-    <RatingBar
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rating="4"
+        android:text="Rating Bar"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/textViewValueRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5/5"
+        android:textSize="25sp"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/black"/>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:isIndicator="false"
+        android:stepSize="0.5"
         style="@style/CustomRatingBarStyle"/>
 </LinearLayout>
